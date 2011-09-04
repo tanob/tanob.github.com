@@ -20,5 +20,7 @@ title: #{original_post_title}
 layout: #{DEFAULT_POST_LAYOUT}
 ---
 	EOP
+
+    `git checkout -b #{post_title} && git add #{post_filepath}`
 end
 
