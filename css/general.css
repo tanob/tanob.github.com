@@ -1,4 +1,5 @@
 body {
+    margin: 0 auto;
 	width: 700px;
 	font-family: constantia, palatino, "times new roman";
 }
@@ -6,5 +7,13 @@ p {
 	font-size: 16px;
 	text-align: justify;
 	line-height: 20px;
+}
+ul.posts {
+    list-style-type: none;
+    padding: 0;
+}
+li .post-date {
+    font-family: monospace;
+    font-weight: bold;
 }
 
