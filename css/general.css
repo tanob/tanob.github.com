@@ -16,4 +16,7 @@ li .post-date {
     font-family: monospace;
     font-weight: bold;
 }
+blockquote {
+    font-style: italic;
+}
 
