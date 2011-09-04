@@ -24,3 +24,13 @@ layout: #{DEFAULT_POST_LAYOUT}
     `git checkout -b #{post_title} && git add #{post_filepath}`
 end
 
+task :startserver do
+    `jekyll --server --auto --pygments >/dev/null 2>&1 & echo $! > jekyll.pid`
+    puts "Server started."
+end
+
+task :stopserver do
+    `kill -9 $(cat jekyll.pid) && rm jekyll.pid`
+    puts "Server stopped."
+end
+
