@@ -1,22 +1,23 @@
 body {
-    margin: 0 auto;
-	width: 700px;
-	font-family: constantia, palatino, "times new roman";
+  margin: 0 auto;
+  width: 700px;
+  font-family: constantia, palatino, "times new roman";
+  word-wrap: break-word;
 }
 p {
-	font-size: 16px;
-	text-align: justify;
-	line-height: 20px;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 20px;
 }
 ul.posts {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 li .post-date {
-    font-family: monospace;
-    font-weight: bold;
+  font-family: monospace;
+  font-weight: bold;
 }
 blockquote {
-    font-style: italic;
+  font-style: italic;
 }
 
