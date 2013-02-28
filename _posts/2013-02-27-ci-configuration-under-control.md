@@ -29,7 +29,7 @@ In case of some problem in the configuration, Go will simply reject it and will 
 
 Talking about problems, here are some I had while playing with this idea:
 
-* we all know that XML isn't that human friendly, it at least it makes editing hard, maybe we could have the actual configuration in another format, like YAML;
+* we all know that XML isn't that human friendly, it at least makes editing hard, maybe we could have the actual configuration in another format, like YAML;
 * it is fundamental to have a tool to validate your changes locally. In the case of my implementation I've wrote a Rake task that uses the XSD but that didn't help me when I've configured a [Stage's name with spaces](https://github.com/tanob/go-config-under-control/commit/d4dab631ddb216583c0d5418711c18bbb36d6567), Go rejected that but the syntax was fine, maybe it can be improved with a tool like [travis-lint](https://github.com/travis-ci/travis-lint).
 
 ## Other CI Servers
