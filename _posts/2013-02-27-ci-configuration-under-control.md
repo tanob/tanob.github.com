@@ -13,13 +13,18 @@ The problem I've noticed in most of the projects using CI servers is that their 
 * version control will tell you who made a change, what part of the configuration got changed, when did it happen and the reason why it changed will be in the commit message;
 * you can easily revert the change;
 * it allows you to see your CI configuration evolving together with your system's code;
-* if you're migrating to another CI server that supports a text configuration file you can easily transform your current configuration.
+* if you're migrating to another CI server that supports a text configuration file you can easily transform your current configuration, reducing the potential for "lock in".
+* The CI tool can automatically configure new pipelines for new branches in VCS.
 
 Having the configuration as a text file shouldn't make you go crazy on the number of commands per job, I highly recommend your job configuration to just call a few commands, e.g. bundle install && rake test package. Remember that the developers should be using the same commands on their development machines to verify their changes before pushing them, so make it simple!
 
 In summary, the idea is to disable the UI administration of the CI server and have its configuration in a VCS. The CI server will have a job/pipeline watching the VCS and on every change it will reconfigure itself, e.g. jobs that are running but got removed from the config should be stopped and removed from the UI, new jobs will show up in the UI and will start being monitored by the CI server.
 
-## Implementing that with [Go](http://www.thoughtworks-studios.com/go-continuous-delivery)
+PH - Is that "THE idea" ?
+
+PH - my personal holy-grail is to see round-trip editing.  Can edit thru UI, can edit via TextMate.  That'd mean that the CI tool would have to be able to save to VCS (but that's not hard) as it's canonical store. Also the automagic pipelines thing.  TBD/BBA suggests branches are made for releases. Release candidates automagically going into a staging environment are desirable.
+
+## Implementing that with [ThoughtWorks Studios' Go](http://www.thoughtworks-studios.com/go-continuous-delivery)
 
 You can see how I've implemented it with Go [here](https://github.com/tanob/go-config-under-control). In the case of Go the configuration is XML-based and they provide a [XSD](https://github.com/tanob/go-config-under-control/blob/master/cruise-config.xsd) so we can actually validate if its syntax is fine.
 
