@@ -9,7 +9,7 @@ the color of the document itself wasn't important, the content just had to be re
 I've tried to use OSX built-in Quartz filters to change all black pixels to blue, and
 there's actually one already called "Blue Tone" but it didn't work that well for the
 document (PDF) that I had to print. It couldn't change the black text and just changed
-other images and drawings to blue. I've even tried to mess up with [ColorSync](), which is
+other images and drawings to blue. I've even tried to mess up with [ColorSync][], which is
 a built-in tool in OSX that allows you to create your own filters.
 
 Tired of that and thinking that it had to be simpler than that, I've remembered of the
