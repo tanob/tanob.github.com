@@ -14,7 +14,7 @@ Consequences:
 {% highlight java %}
   Lists.transform(list, new Function<From, To>() {
     @Override
-    public String apply(From from) {
+    public To apply(From from) {
       return transformIt(from); // what if it has a checked-exception?
     }
   });
