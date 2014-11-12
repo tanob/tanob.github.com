@@ -5,10 +5,10 @@ layout: post
 
 If you ever run into weird issues with [capybara-webkit](https://github.com/thoughtbot/capybara-webkit) you might find some clues about them by enabling logging:
 
-```ruby
+{% highlight ruby %}
 session = Capybara::Session.new(:webkit)
 session.driver.enable_logging
-```
+{% endhighlight %}
 
 After that it will print in stdout the commands that are being executed and their results, for example:
 
