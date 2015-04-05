@@ -3,6 +3,7 @@ permalink: date
 highlighter: pygments
 url: http://tanob.github.io
 disqus_short_name: tanob-github
+feed_url: http://feeds.feedburner.com/tanob-blog
 
 author:
   name: Adriano Bonat
