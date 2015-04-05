@@ -16,7 +16,7 @@ Tired of that and thinking that it had to be simpler than that, I've remembered 
 command-line tool called `convert`, which is provided by ImageMagick. I just had to do
 one Google search to find [how to do it][1]:
 
-        $ convert blackish_doc.png -fill blue -opaque black blueish_doc.png
+    $ convert blackish_doc.png -fill blue -opaque black blueish_doc.png
 
 Just had to convert the PDF to PNG before using this line and it saved my life ;)
 
