@@ -1,5 +1,15 @@
 .masthead {
   background-color: #f9f9f9;
+  margin-bottom: 2rem;
+}
+
+.masthead .social {
+  float: right;
+}
+
+.social a:hover,
+.social a:focus {
+  color: #268bd2;
 }
 
 .titles-and-dates {
@@ -23,9 +33,15 @@
   font-size: 0.8em;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 48em) {
   .titles-and-dates .date {
     display: none;
+  }
+
+  .masthead .social {
+    display: block;
+    padding-top: 0.5em;
+    float: none;
   }
 }
 

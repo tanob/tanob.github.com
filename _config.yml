@@ -11,3 +11,9 @@ author:
 
 gems:
     - jekyll-sitemap
+
+exclude:
+  - vendor/fontello/*.txt
+  - vendor/fontello/config.json
+  - vendor/fontello/demo.html
+
