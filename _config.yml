@@ -9,3 +9,5 @@ author:
   name: Adriano Bonat
   email: adrianob@gmail.com
 
+gems:
+    - jekyll-sitemap
