@@ -1,4 +1,4 @@
 permalink: date
-pygments: true
+highlighter: pygments
 url: http://tanob.github.io
 disqus_short_name: tanob-github
