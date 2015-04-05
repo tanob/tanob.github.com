@@ -1,12 +1,8 @@
 <!DOCTYPE html>
 <html lang="{% if page.lang %}{{ page.lang }}{% else %}en-us{% endif %}">
 	<head>
-		<title>{{ page.title }}</title>
-		<meta name="author" content="{{ site.author.name }}">
-		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="/css/general.css">
+		{% include head_common.html %}
 		<link rel="stylesheet" type="text/css" href="/css/monokai.css">
-                <link href="{{ site.feed_url }}" rel="alternate" title="{{ site.title }}" type="application/atom+xml">
 	</head>
 	<body>
 		<h1>{{ page.title }}</h1>
