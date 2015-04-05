@@ -46,7 +46,7 @@ This implementation has some differences in comparison with the first one:
 
 Regarding the memory consumption bit I've decided to run a quick experiment to prove it. You can find the two implementations [here][github-impls] that you'll run with the [node.js](http://nodejs.org/) runtime and below is a graph that compares the memory consumption outputs.
 
-![Javascript memory consumption using different object instantiation](/files/2013-04-28-javascript-object-initialization/graph.png)
+![Javascript memory consumption using different object instantiation]({{ site.url }}/files/2013-04-28-javascript-object-initialization/graph.png)
 
 With that in mind I'd strongly suggest to use the patterns that Crockford shows in his text [Private Members in JavaScript][crock-private], following that you'll get the benefits of prototype when dealing with public stuff and you can mix it with closures to make some values private in your implementation.
 
