@@ -2,3 +2,8 @@ permalink: date
 highlighter: pygments
 url: http://tanob.github.io
 disqus_short_name: tanob-github
+
+author:
+  name: Adriano Bonat
+  email: adrianob@gmail.com
+

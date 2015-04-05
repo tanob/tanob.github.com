@@ -10,8 +10,8 @@ layout: null
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <id>{{ site.url }}</id>
  <author>
-   <name>Adriano Bonat</name>
-   <email>adrianob@gmail.com</email>
+   <name>{{ site.author.name }}</name>
+   <email>{{ site.author.email }}</email>
  </author>
 
  {% for post in site.posts %}
@@ -25,3 +25,4 @@ layout: null
  {% endfor %}
  
 </feed>
+
