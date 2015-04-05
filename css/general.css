@@ -1,26 +1,31 @@
-body {
-  margin: 0 auto;
-  width: 700px;
-  font-family: constantia, palatino, "times new roman";
-  word-wrap: break-word;
+.masthead {
+  background-color: #f9f9f9;
 }
-p {
-  font-size: 16px;
-  text-align: justify;
-  line-height: 20px;
-}
-ul.posts {
+
+.titles-and-dates {
   list-style-type: none;
   padding: 0;
 }
-li .post-date {
-  font-family: monospace;
-  font-weight: bold;
+
+.titles-and-dates li {
+  padding: 5px 0;
 }
-blockquote {
-  font-style: italic;
+
+.titles-and-dates .title {
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
 }
-code {
-  white-space: pre;
+
+.titles-and-dates .date {
+  color: #999;
+  float: right;
+  font-family: "PT Serif", Georgia, "Times New Roman", serif;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+@media (max-width: 900px) {
+  .titles-and-dates .date {
+    display: none;
+  }
 }
 

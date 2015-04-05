@@ -3,13 +3,16 @@ layout: default
 title: Index of /
 ---
 
-<ul class="posts">
-	{% for post in site.posts %}
-    <li><span class="post-date">{{ post.date | date_to_string }}</span> &raquo;
-		{% if post.lang %}
-		[{{ post.lang }}] 
-		{% endif %}
-		<a href="{{ post.url }}">{{ post.title }}</a></li>
-	{% endfor %}
+<ul class="titles-and-dates">
+  {% for post in site.posts %}
+  <li>
+    <a href="{{ post.url }}">
+      <div>
+        <span class="title">{{ post.title }}</span>
+        <span class="date">{{ post.date | date_to_string }}</span>
+      </div>
+    </a>
+  </li>
+  {% endfor %}
 </ul>
 

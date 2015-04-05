@@ -1,19 +1,11 @@
 ---
-title: Not Found
+layout: default
+title: "404: Page not found"
 sitemap: false
 ---
-<!DOCTYPE html>
-<html>
-	<head>
-		{% include head_common.html %}
-		<meta http-equiv="refresh" content="5; url=/">
-	</head>
-	<body>
-		<h1>404 Not Found</h1>
 
-		<p>I don't know what you've requested but let me tell you that it doesn't exist. I'm going to redirect you to the <a href="/">index</a>, you'll certainly find something nice there!</p>
-
-		{% include analytics.html %}
-	 </body>
- </html>
+<div class="page">
+  <h1 class="page-title">{{ page.title }}</h1>
+  <p class="lead">Sorry, we've misplaced that URL or it's pointing to something that doesn't exist. <a href="/">Head back home</a> to try finding it again.</p>
+</div>
 

@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html lang="{% if page.lang %}{{ page.lang }}{% else %}en-us{% endif %}">
-	<head>
-		{% include head_common.html %}
-	</head>
-	<body>
-		<h1>{{ page.title }}</h1>
+<html lang="en-us">
 
-		{{ content }}
+  {% include head.html %}
 
-		<address>
-			<p>
-				Adriano Bonat<br>
-				&raquo; <a href="http://github.com/tanob">Github</a><br>
-				&raquo; <a href="http://twitter.com/tanob">Twitter</a>
-			</p>
-		</address>
-		{% include analytics.html %}
-	</body>
+  <body>
+
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">{{ site.title }}</a>
+            <small>{{ site.tagline }}</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        {{ content }}
+      </div>
+    </div>
+
+  </body>
 </html>
-
