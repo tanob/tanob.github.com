@@ -10,7 +10,6 @@ author:
   email: adrianob@gmail.com
 
 gems:
-    - jekyll-feed
     - jekyll-sitemap
 
 exclude:
@@ -18,5 +17,3 @@ exclude:
   - vendor/fontello/config.json
   - vendor/fontello/demo.html
 
-feed:
-  path: atom.xml
